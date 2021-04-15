@@ -1,0 +1,45 @@
+#content {
+    margin: 10px auto;
+    padding: 10px;
+    width: 85%;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px 1px #aaaaaa;
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#mails-navigation {
+    margin-bottom: 5px;
+}
+
+#add-btn {
+    right: 5px
+}
+
+#mails-items {
+    overflow-x: hidden;
+    overflow-y: visible;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    height: 500px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mail-item {
+    color: #fff;
+    padding: 5px;
+    background-color: rgb(38, 92, 192);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.mail-item:hover {
+    background-color: rgb(31, 73, 153);
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
