@@ -48,8 +48,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Edit Mail #<?php echo $id?></title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="Data/include/bootstrap/css/bootstrap.min.css?v=<?php echo time();?>"/>
+    <script>window.jQuery || document.write('<script src="Data/include/jquery/jquery.slim.min.js"><\/script>')</script>
+    <script src="Data/include/jquery/jquery-3.5.1.min.js"></script>
+    <script src="Data/include/jquery/jquery-3.5.0.js"></script>
+    <script src="Data/include/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Data/include/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Data/style.css?v=<?php echo time(); ?>">
   </head>
   <body>
     <form id="content" action="mail-edit.php" method="post" name="mail-edit">

@@ -11,13 +11,16 @@ if($link === false) {
   $sql = "CREATE DATABASE IF NOT EXISTS `".DB_NAME."`;
           CREATE TABLE IF NOT EXISTS `".DB_NAME."`.`mails` (
             id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-            title VARCHAR(255) NOT NULL,
-            data_1 VARCHAR(255) NOT NULL,
-            data_2 VARCHAR(255) NOT NULL,
-            data_3 VARCHAR(255) NOT NULL,
-            data_4 VARCHAR(255) NOT NULL,
-            data_5 VARCHAR(255) NOT NULL,
-            data_6 VARCHAR(255) NOT NULL,
+            firstname VARCHAR(255) NOT NULL,
+            lastname VARCHAR(255) NOT NULL,
+            c_profile VARCHAR(255) NOT NULL,
+            email VARCHAR(255) NOT NULL,
+            phone VARCHAR(255) NOT NULL,
+            job VARCHAR(255) NOT NULL,
+            skils JSON NOT NULL,
+            technicals JSON NOT NULL,
+            experiences JSON NOT NULL,
+            education VARCHAR(255) NOT NULL,
             post_datetime DATETIME DEFAULT CURRENT_TIMESTAMP
           );";
   if(mysqli_query($link, $sql)){

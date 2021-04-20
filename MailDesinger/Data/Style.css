@@ -1,0 +1,103 @@
+.noties {
+    width: 60%;
+    top: 20px;
+    right: 20%;
+    font-weight: bold;
+    z-index: 1031;
+    /* Max Z-Index in Fixed Nav Menu is 1030*/
+    text-align: center;
+    position: fixed;
+}
+
+.noties.topleft {
+    bottom: unset;
+    right: unset;
+    width: 30%;
+    top: 20px;
+    left: 20px;
+}
+
+.noties.topright {
+    bottom: unset;
+    left: unset;
+    width: 30%;
+    top: 20px;
+    right: 20px;
+}
+
+.noties.bottomright {
+    top: unset;
+    left: unset;
+    width: 30%;
+    bottom: 20px;
+    right: 20px;
+}
+
+.noties.bottomleft {
+    top: unset;
+    right: unset;
+    width: 30%;
+    bottom: 20px;
+    left: 20px;
+}
+
+.noties.bottom {
+    top: unset;
+    bottom: 20px;
+}
+
+.alert {
+    margin-bottom: 2px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+#content {
+    margin: 10px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px 1px #aaaaaa;
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#mails-navigation {
+    margin-bottom: 5px;
+}
+
+#add-btn {
+    right: 5px
+}
+
+#mails-items {
+    overflow-x: hidden;
+    overflow-y: visible;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    height: 500px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mail-item {
+    color: #fff;
+    padding: 5px;
+    background-color: rgb(38, 92, 192);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.mail-item:hover {
+    background-color: rgb(31, 73, 153);
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
