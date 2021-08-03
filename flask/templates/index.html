@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Binary Converter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Binary Converter</h1>
+    <h3>Enter your number to change to binary</h3>
+    <input type="number" id="user-number"><br>
+    <button onclick="convertNumber()">Convert</button>
+    <h4>Your binary number: <span id="converted-number"></span></h4>
+
+    <script>
+        function convertNumber() {
+            $.get("/convert", {
+                "userNumber": document.getElementById("user-number").value
+            }).done(function(data) {
+                data = JSON.parse(data) // str to dict (json)
+                if (data["seccess"]) {
+                    document.getElementById("converted-number").innerHTML = data["value"]
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
